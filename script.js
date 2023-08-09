@@ -12,29 +12,29 @@ function calcCuotas(precio, cuotas){
 
 }*/
 
-let producto1 = {
-    nombre : 'pes 06',
-    precio : '5$'
-}
+// `let producto1 = {
+//     nombre : 'pes 06',
+//     precio : '5$'
+// }
 
-let producto2 = {
-    nombre : 'COD BO',
-    precio : '10$'
-}
-let miArray = [producto1,producto2]
+// let producto2 = {
+//     nombre : 'COD BO',
+//     precio : '10$'
+// }
+// let miArray = [producto1,producto2]
 
-console.log(miArray)
+// console.log(miArray)
 
-let array2 = [];
-array2.push(producto1,producto2)
-console.log(array2)
+// let array2 = [];
+// array2.push(producto1,producto2)
+// console.log(array2)`
 
 
 
 
 
 /* user-login function */
-let productos =[]
+/*let productos =[]
 function crearProd(titulo, desc,precio,imagen){
   let producto ={
     titulo,
@@ -69,4 +69,30 @@ function login(usario){
   }
 }
 login(teemo);
-console.log(productos)
+console.log(productos)*/
+const userAdmin = {
+  username:'admin',
+  password:'1234'
+}
+
+function sesion(){
+   for (let x=1 ; x<= 3; x++ ){ 
+    const username = prompt('ingrese el usario');
+    const password = prompt('ingrese el usario');
+  
+    if(username == userAdmin.username && password==userAdmin.password){
+      console.log('logeado')
+      return true;
+    } else{
+      console.log('no logeado')
+    }
+    
+    console.log(username)
+    console.log(password)
+  
+  }
+}
+
+ 
+  
+sesion()
