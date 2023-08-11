@@ -153,6 +153,32 @@ console.log(productos)*/
 
 // GUARDAR PRODUCTOS LOCALSTORAGE
 
+const userAdmin = {
+    username:'admin',
+    password:"1234"
+  }
+  
+   function sesion(){
+     for (let x=1 ; x<= 3; x++ ){ 
+      const username = prompt('ingrese el usuario');
+      const password = prompt('password');
+      let check = {
+        username : username,
+        password : password
+      } 
+      if(check.username == userAdmin.username && check.password==userAdmin.password){
+        console.log('logeado')
+        console.log(username)
+        console.log(password)
+        return check;
+      } else{
+        console.log('no logeado')
+        return false;
+      }
+    }
+  }
+check=sesion()  
+  
 function ingresarProducto() {
   var producto = prompt("Ingrese un producto:");
   
@@ -179,12 +205,12 @@ function convertirAString() {
   
   var productosString = JSON.stringify(productos);
   
-  console.log("Productos como cadena de texto: " + productosString);
+  console.log("Productos como texto: " + productosString);
 }
 
-// Ejecutar el programa
-while (true) {
-  var opcion = prompt("Ingrese una opción:\n1. Ingresar producto\n2. Convertir a cadena de texto\n3. Salir");
+
+while (check.password == userAdmin.password) {
+  const opcion = prompt("Ingrese una opción:\n1. Ingresar producto\n2. Convertir en texto\n3. Salir");
   
   if (opcion === "1") {
     ingresarProducto();
