@@ -1,0 +1,81 @@
+
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+ width: 90rem;
+height: 64rem;
+background-color: white;
+}
+.banner{
+    display: flex;
+    width: 62.25rem;
+    justify-content: space-between;
+    align-items: center;    
+    color: black;
+
+}
+.content{
+    display: flex;
+padding-bottom: 0px;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.625rem;
+}
+h1{
+    color: #222;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+p.content{
+    width: 45.0625rem;
+    color: #222;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+img{
+    width: 19.375rem;
+height: 19.375rem;
+flex-shrink: 0;
+}
+header{
+display: inline-flex;
+padding: 1.8125rem 10.1875rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-radius: 0.9375rem;
+background: #222;
+}
+.menu{
+ display: flex;
+justify-content: center;
+align-items: center;
+gap: 2.25rem;
+color: white;
+}
+.text_group{
+width: 59.9375rem;
+height: 27.375rem;
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 35px;
+}
+.frame{
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+}

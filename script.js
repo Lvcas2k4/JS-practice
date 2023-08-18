@@ -153,72 +153,74 @@ console.log(productos)*/
 
 // GUARDAR PRODUCTOS LOCALSTORAGE
 
-const userAdmin = {
-    username:'admin',
-    password:"1234"
-  }
+// const userAdmin = {
+//     username:'admin',
+//     password:"1234"
+//   }
   
-   function sesion(){
-     for (let x=1 ; x<= 3; x++ ){ 
-      const username = prompt('ingrese el usuario');
-      const password = prompt('password');
-      let check = {
-        username : username,
-        password : password
-      } 
-      if(check.username == userAdmin.username && check.password==userAdmin.password){
-        console.log('logeado')
-        console.log(username)
-        console.log(password)
-        return check;
-      } else{
-        console.log('no logeado')
-        return false;
-      }
-    }
-  }
-check=sesion()  
+//    function sesion(){
+//      for (let x=1 ; x<= 3; x++ ){ 
+//       const username = prompt('ingrese el usuario');
+//       const password = prompt('password');
+//       let check = {
+//         username : username,
+//         password : password
+//       } 
+//       if(check.username == userAdmin.username && check.password==userAdmin.password){
+//         console.log('logeado')
+//         console.log(username)
+//         console.log(password)
+//         return check;
+//       } else{
+//         console.log('no logeado')
+//         return false;
+//       }
+//     }
+//   }
+// check=sesion()  
   
-function ingresarProducto() {
-  var producto = prompt("Ingrese un producto:");
-  
-
-  var productosGuardados = localStorage.getItem("productos");
+// function ingresarProducto() {
+//   var producto = prompt("Ingrese un producto:");
   
 
-  var productos = productosGuardados ? JSON.parse(productosGuardados) : [];
+//   var productosGuardados = localStorage.getItem("productos");
   
 
-  productos.push(producto);
+//   var productos = productosGuardados ? JSON.parse(productosGuardados) : [];
   
 
-  localStorage.setItem("productos", JSON.stringify(productos));
-  
-  console.log("Producto ingresado: " + producto);
-}
-
-
-function convertirAString() {
+//   productos.push(producto);
   
 
-  var productos = productosGuardados ? JSON.parse(productosGuardados) : [];
+//   localStorage.setItem("productos", JSON.stringify(productos));
   
-  var productosString = JSON.stringify(productos);
-  
-  console.log("Productos como texto: " + productosString);
-}
+//   console.log("Producto ingresado: " + producto);
+// }
 
 
-while (check.password == userAdmin.password) {
-  const opcion = prompt("Ingrese una opción:\n1. Ingresar producto\n2. Convertir en texto\n3. Salir");
+// function convertirAString() {
   
-  if (opcion === "1") {
-    ingresarProducto();
-  } else if (opcion === "2") {
-    convertirAString();
-  } else if (opcion === "3") {
-    break;
-  } else {
-    console.log("Opción inválida. Por favor, ingrese una opción válida.");
-  }
-}
+
+//   var productos = productosGuardados ? JSON.parse(productosGuardados) : [];
+  
+//   var productosString = JSON.stringify(productos);
+  
+//   console.log("Productos como texto: " + productosString);
+// }
+
+
+// while (check.password == userAdmin.password) {
+//   const opcion = prompt("Ingrese una opción:\n1. Ingresar producto\n2. Convertir en texto\n3. Salir");
+  
+//   if (opcion === "1") {
+//     ingresarProducto();
+//   } else if (opcion === "2") {
+//     convertirAString();
+//   } else if (opcion === "3") {
+//     break;
+//   } else {
+//     console.log("Opción inválida. Por favor, ingrese una opción válida.");
+//   }
+// }
+
+//EJERCICIO 6
